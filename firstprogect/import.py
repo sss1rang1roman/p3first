@@ -1,6 +1,6 @@
 import telebot
 
-API_TOKEN = '8436897050:AAFZwr9CEZRlAarFIMR0A2Bwix16GIjnJlc'
+API_TOKEN = ''
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -32,6 +32,7 @@ Hi i like to tell about weather, ohh yeasss\
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
     bot.reply_to(message, message.text)
+
 
 
 bot.infinity_polling()
